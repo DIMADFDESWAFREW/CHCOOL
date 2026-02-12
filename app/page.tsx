@@ -8,10 +8,10 @@ import { CourseCard } from "../components/CourseCard";
 import { ExamModal } from "../components/ExamModal";
 import { Toast } from "../components/Toast";
 
-import { COURSES, EXAMS } from "/lib/data";
-import { AppState, Course } from "/lib/types";
-import { STORE_KEY, calcLevel, defaultState, updateStreak } from "/lib/state";
-import { initTelegramUser, getTelegram } from "/lib/telegram";
+import { COURSES, EXAMS } from "../lib/data";
+import { AppState, Course } from "../lib/types";
+import { STORE_KEY, calcLevel, defaultState, updateStreak } from "../lib/state";
+import { initTelegramUser, getTelegram } from "../lib/telegram";
 
 type Chip = "all" | "design" | "it" | "marketing" | "popular";
 
