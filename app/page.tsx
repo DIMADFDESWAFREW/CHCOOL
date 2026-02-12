@@ -2,11 +2,11 @@
 
 import Script from "next/script";
 import { useEffect, useMemo, useState } from "react";
-import { Sidebar } from "/components/Sidebar";
-import { Button, Pill } from "/components/ui";
-import { CourseCard } from "/components/CourseCard";
-import { ExamModal } from "/components/ExamModal";
-import { Toast } from "/components/Toast";
+import { Sidebar } from "../components/Sidebar";
+import { Button, Pill } from "../components/ui";
+import { CourseCard } from "../components/CourseCard";
+import { ExamModal } from "../components/ExamModal";
+import { Toast } from "../components/Toast";
 
 import { COURSES, EXAMS } from "/lib/data";
 import { AppState, Course } from "/lib/types";
