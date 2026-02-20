@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { HeroBanner } from "../components/HeroBanner";
 import { useEffect, useMemo, useState } from "react";
 import { Sidebar } from "../components/Sidebar";
 import { Button, Pill } from "../components/ui";
