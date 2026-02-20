@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Course } from "@/lib/types";
+import { Course } from "../lib/types";
 import { Button, Card, Pill } from "./ui";
 
 export function CourseCard({
