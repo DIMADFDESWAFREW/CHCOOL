@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "./ui";
-import { Exam } from "@/lib/types";
+import { Exam } from "../lib/types";
 import { useMemo, useState } from "react";
 
 export function ExamModal({
