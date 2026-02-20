@@ -218,45 +218,15 @@ export default function HomePage() {
           </div>
 
           {/* Banner */}
-          <section className="rounded-xl2 border border-line bg-gradient-to-br from-blue-500/20 to-amber-200/10 shadow-soft p-4 md:p-5 relative overflow-hidden">
-            <div className="absolute -top-24 -right-28 w-[360px] h-[360px] rounded-full bg-emerald-400/20 blur-sm" />
-            <div className="relative grid md:grid-cols-[1.3fr_.7fr] gap-4">
-              <div>
-                <div className="text-xl font-black">Учись и возвращай деньги</div>
-                <div className="text-slate-300 font-bold text-sm mt-1 max-w-[70ch]">
-                  Это реальный проект (Next.js). Следующий шаг: подключаем базу и админку курсов.
-                </div>
-
-                <div className="flex flex-wrap gap-2.5 mt-4">
-                  <div className="rounded-xl border border-line bg-black/20 px-3 py-2.5 min-w-[160px]">
-                    <div className="text-xs text-slate-300 font-bold">Доступный возврат</div>
-                    <div className="font-black mt-1">{state.cashback} ₽ из 3000 ₽</div>
-                  </div>
-
-                  <div className="rounded-xl border border-line bg-black/20 px-3 py-2.5 min-w-[160px]">
-                    <div className="text-xs text-slate-300 font-bold">Streak</div>
-                    <div className="font-black mt-1">{state.streak} дней</div>
-                  </div>
-
-                  <div className="rounded-xl border border-line bg-black/20 px-3 py-2.5 min-w-[160px]">
-                    <div className="text-xs text-slate-300 font-bold">Экзамены</div>
-                    <div className="font-black mt-1">{doneCourses}/{COURSES.length}</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative flex flex-col gap-3 justify-between">
-                <div>
-                  <div className="text-xs text-slate-300 font-bold">Общий прогресс</div>
-                  <div className="mt-2 h-2.5 rounded-full bg-white/10 border border-white/10 overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-emerald-400/95 to-blue-500/95" style={{ width: totalProgress + "%" }} />
-                  </div>
-                  <div className="text-xs text-slate-300 font-bold mt-2">Совет: работаем микрошагами, как квест 🎮</div>
-                </div>
-                <Button variant="good" onClick={resetDemo} className="self-start md:self-end">Сбросить демо</Button>
-              </div>
-            </div>
-          </section>
+      {/* Hero Banner */}
+<HeroBanner
+  refundTotalRub={3000}
+  refundAvailableRub={state.cashback}
+  onStart={() => setActiveView("courses")}
+  onOpenRules={() =>
+    ping("Возврат работает так: проходишь курс на 100%, сдаёшь экзамен и получаешь деньги назад 💸")
+  }
+/>
 
           {/* Chips */}
           <div className="flex flex-wrap gap-2">
