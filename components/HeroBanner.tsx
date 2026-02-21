@@ -66,7 +66,7 @@ export function HeroBanner({
           <Button onClick={onStart} className="w-full">
             Начать путь
           </Button>
-          <Button variant="ghost" onClick={onOpenRules} className="w-full">
+          <Button variant="default" onClick={onOpenRules} className="w-full">
             Как работает возврат
           </Button>
 
