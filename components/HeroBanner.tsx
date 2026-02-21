@@ -19,8 +19,8 @@ export function HeroBanner({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 220, damping: 22 }}
-      className="relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/35 p-5 md:p-7"
-    >
+      className="relative overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900/35 p-4 md:p-7 min-h-[220px] md:min-h-[280px]"
+   >
       {/* фоновые "пятна" */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-emerald-500/20 blur-3xl" />
@@ -28,7 +28,7 @@ export function HeroBanner({
         <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_0%,rgba(255,255,255,0.08),transparent_60%)]" />
       </div>
 
-      <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+      <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div className="max-w-2xl">
           <div className="flex flex-wrap items-center gap-2">
             <Pill>PayBack Academys</Pill>
@@ -36,7 +36,7 @@ export function HeroBanner({
             <Pill>Mini App</Pill>
           </div>
 
-          <h2 className="mt-4 text-2xl md:text-3xl font-semibold leading-tight">
+          <h2 className="mt-3 text-xl md:text-3xl font-semibold leading-snug">
             Пройди обучение полностью и получи{" "}
             <span className="text-emerald-300">возврат</span> своих денег
           </h2>
